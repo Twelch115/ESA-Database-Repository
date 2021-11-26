@@ -1,7 +1,7 @@
 <?php
 define ("DB_NAME", "new");
 define ("DB_USER", "admin");
-define ("DB_PASSWORD", "password");
+define ("DB_PASSWORD", "backEND12345");
 define ("DB_HOST", "localhost");
 
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD);
