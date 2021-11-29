@@ -5,4 +5,5 @@ function Validate($Data) { #sets function name and paramiters
 	$Data = htmlspecialchars($Data); #sets special characters to HTML compatable versions.
 	return $Data; #returns paramater
 }
+echo "poggers";
 #ends PHP code block ?>
