@@ -1,9 +1,4 @@
 <?php 
-define ("DB_NAME", "ESA_Database");
-define ("DB_USER", "admin");
-define ("DB_PASSWORD", "backEND12345");
-define ("DB_HOST", "localhost");
-
 function Validate(Data) {
 	Data = trim(Data);
 	Data = stripslashes(Data);
