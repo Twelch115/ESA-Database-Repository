@@ -15,4 +15,4 @@ $db_selected = mysqli_select_db($connection, DB_NAME); #attempts connection to s
 if(!$db_selected) { #IF connection fails
 	die('can`t use '.DB_NAME.':'.mysqli_error($connection)); #quit and print error message
 }
-?> #ends the PHP code block
+#ends the PHP code block ?> 
