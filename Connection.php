@@ -16,5 +16,7 @@ if(!$db_selected) { #IF connection fails
 	die('can`t use '.DB_NAME.':'.mysqli_error($connection)); #quit and print error message
 }
 
-echo "Test";
+$AstroName = $_POST["AstroName"]
+$AstroMissions =  $_POST["AstroMissions"]
+
 #ends the PHP code block ?> 
