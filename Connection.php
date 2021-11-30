@@ -18,5 +18,7 @@ if(!$db_selected) { #IF connection fails
 
 $AstroName = $_POST["AstroName"]
 $AstroMissions =  $_POST["AstroMissions"]
-
+if(!$AstroName || !$AstroMissions) {
+	die('It`s broken');	
+}
 #ends the PHP code block ?> 
