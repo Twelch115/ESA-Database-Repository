@@ -8,13 +8,6 @@ $AstroMissions =  $_POST["AstroMissions"]
 
 $sql = "INSTERT INTO astronaut(name, no_missions) VALUES ('$AstroName', $AstroMissions)";
 
-if(!mysqli_query($connection, $sql)){
-	die("Error:".mysqli_error($connection));
-}
-else{
-	echo "Data Inputed";
-}
 
-mysqli_close($connection);
 
 #ends PHP code block ?>
