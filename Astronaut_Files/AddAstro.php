@@ -19,5 +19,5 @@ else{
 
 mysqli_close($connection);
 
-
-#ends PHP code block ?>
+#ends PHP code block 
+?>
