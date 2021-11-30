@@ -5,4 +5,7 @@ function Validate($Data) { #sets function name and paramiters
 	$Data = htmlspecialchars($Data); #sets special characters to HTML compatable versions.
 	return $Data; #returns paramater
 }
+function Testing() {
+	echo "Testing";	
+}
 #ends PHP code block ?>
