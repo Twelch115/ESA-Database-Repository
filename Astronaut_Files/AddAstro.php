@@ -5,8 +5,9 @@ require '../Validation.php'; #the file will not run without Validation.PHP being
 
 
 $AstroName = $_POST["AstroName"];
-$AstroMissions =  $_POST["AstroMissions"];
+$AstroMissions = Validate($AstroMissions =  $_POST["AstroMissions"]);
 $AstroID = $_POST["AstroID"];
+
 
 
 $sql = "INSERT INTO astronaut(astronaut_id, name, no_missions) VALUES ($AstroID, '$AstroName', $AstroMissions)";
