@@ -3,9 +3,6 @@
 require '../Connection.php'; #the file will not run without Connection.PHP being linked
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
-
-#ends PHP code block ?>
-
 $AstroName = $_POST["AstroName"]
 $AstroMissions =  $_POST["AstroMissions"]
 
@@ -20,4 +17,4 @@ else{
 
 mysqli_close($connection);
 
-?>
+#ends PHP code block ?>
