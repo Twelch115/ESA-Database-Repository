@@ -13,7 +13,7 @@ if (mysqli_num_rows($result) > 0) {
     echo "id: " . $row["astronaut_id"]. " - Name: " . $row["name"]. "Number of missions: " . $row["no_missions"]. "<br>";
   }
 } else {
-  echo "0 results";
+  echo "0 result";
 }
   
 mysqli_close($conn);
