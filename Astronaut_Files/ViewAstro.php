@@ -2,6 +2,8 @@
 require '../Connection.php'; #the file will not run without Connection.PHP being linked
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
+echo '<a href + "../index.html"> Return </a>; 
+
 $sql = "SELECT astronaut_id, name, no_missions FROM astronauts";
 $result = mysqli_query($connection, $sql);
 
