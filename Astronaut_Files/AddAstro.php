@@ -1,6 +1,6 @@
 <?php #starts PHP code block
-include 'Connection.php'; #the file will not run without Connection.PHP being linked
-include'Validation.php'; #the file will not run without Validation.PHP being linked
+include '../Connection.php'; #the file will not run without Connection.PHP being linked
+include '../Validation.php'; #the file will not run without Validation.PHP being linked
 
 
 $AstroName = $_POST["AstroName"];
