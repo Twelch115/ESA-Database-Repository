@@ -21,5 +21,7 @@ else{
 
 mysqli_close($connection);
 
+echo <a href = "../index.html"> Return </a> #return to infex
+
 #ends PHP code block 
 ?>
