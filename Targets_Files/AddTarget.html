@@ -1,0 +1,17 @@
+<!DOCTYPE html> <!-- sets the type of code to be used in the document -->
+<html> <!-- begins the HTML code block -->
+<head> <!-- opens header tag -->
+	<title> Add a Target </title> <!-- Sets Page title -->
+</head> <!-- closes header tag -->
+<body> <!-- opens body tag -->
+	<p> Input a new target into the database </p> 
+	<a href = ../index.html> Cancel Addition </a> <br> <br> <!-- links back to the index page -->
+	<form action = "AddTarget.php" method = "post"> <!-- starts the form, sets the action on submission and the method used -->
+		<input type = "text" style = "width:250px;" name = "TarName" placeholder = "Input the target's name." minlength = "1" maxlength = "30" required> <br> <br> <!-- sets the name input box, with it's name, style and length -->
+        <input type = "number" style = "width:250px;" name = "TarFirstDate" placeholder = "Onput the date of target's first mission." min = "1" required> <br> <br> <!-- sets the first mission input box, with it's name, style and paramiters-->
+        <input type = "text" style = "width:250px;" name = "TarType" placeholder = "Input the type of target." minlength = "1" maxlength= "30" required> <br> <br> <!-- sets the type input box, with it's name, style and length -->
+        <input type = "number" style = "width:340px;" name = "TarMissions" placeholder = "Input number of missions that have gone to this target." min = "1" required> <br> <br> <!-- sets the mission number input box, with it's name, style and paramiters-->
+		<input type = "submit" name = "TarSubmit" value = "Submit addition"> <!-- sets the form submission box -->
+	</form>	 <!-- ends the form -->
+</body> <!-- closes body tag -->
+</html> <!-- ends HTML code block -->
