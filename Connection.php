@@ -1,8 +1,9 @@
 <?php #starts the PHP code block
- define ("DB_NAME", "ESA_Database"); #sets the name of connecting database
- define ("DB_USER", "admin"); #sets the username to connect to database with
- define ("DB_PASSWORD", "backEND12345"); #sets the password to connect to database with 
- define ("DB_HOST", "localhost"); #sets host that the database uses
+define ("DB_NAME", "ESA_Database");
+define ("DB_USER", "root");
+define ("DB_PASSWORD", "");
+define ("DB_HOST", "localhost");
+
 
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD); #attempts connection to the database portal (PHPmyadmin)
 
