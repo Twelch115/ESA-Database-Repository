@@ -1,0 +1,14 @@
+<!DOCTYPE html> <!-- sets the type of code to be used in the document -->
+<html> <!-- begins the HTML code block -->
+<head> <!-- opens header tag -->
+	<title> Add an astronaut </title> <!-- Sets Page title -->
+</head> <!-- closes header tag -->
+<body> <!-- opens body tag -->
+	<p> Remove an astronaut from the database </p> 
+	<a href = ../index.html> Cancel Removal <a> <br> <br> <!-- links back to the index page -->
+	<form action = "RemoveAstro.php" method = "post"> <!-- starts the form, sets the action on submission and the method used -->
+		<input type = "number" style = "width:275px;" name = "AstroID" placeholder = "Input the ID of the astronaut to be removed." min = "1" required> <br> <br> <!-- sets the id input box, with it's name and style -->
+		<input type = "submit" name = "AstroSubmit" value = "Submit removal"> <!-- sets the form submission box -->
+	</form>	 <!-- ends the form -->
+</body> <!-- closes body tag -->
+</html> <!-- ends HTML code block -->
