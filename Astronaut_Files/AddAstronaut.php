@@ -18,7 +18,7 @@ else{
 mysqli_close($connection);
 
 //echo '<a href = "../index.html"> Return  </a>' #return to index
-//echo '<a href = "AddAstro.html"> Add another entry  </a>' #return to add
+echo '<a href = "AddAstro.html"> Add another entry  </a>' #return to add
 //echo '<a href = "RemoveAstro.html"> Remove an entry </a>' #return to remove
 
 // #ends PHP code block 
