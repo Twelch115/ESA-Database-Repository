@@ -3,7 +3,7 @@ echo "hello";
 require '../Connection.php'; #the file will not run without Validation.PHP being linked
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 echo "hello2";
-$sql = "SELECT astronaut_id, name, no_missions FROM astronaut"; #select all columns from astronaut table
+$sql = "SELECT * FROM astronaut"; #select all columns from astronaut table
 $result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
 print_r($result);
 
