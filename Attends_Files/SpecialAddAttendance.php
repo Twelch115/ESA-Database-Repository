@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!-- sets the type of code to be used in the document -->
+<!-- <!DOCTYPE html> <!-- sets the type of code to be used in the document --> -->
 <html> <!-- begins the HTML code block -->
 
 <head> <!-- opens header tag -->
@@ -34,5 +34,3 @@ echo " I am here";
 </body>
   
 </html>
-
-
