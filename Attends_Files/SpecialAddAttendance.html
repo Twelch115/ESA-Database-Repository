@@ -18,6 +18,7 @@
 		require '../Connection.php'; #the file will not run without Connection.PHP being linked
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
 		$result = mysqli_query($connection, "SELECT * FROM targets");
+		print_r($result);
                 foreach ($result as $row ) {
                 $thisValue = $row['target_id'];
 		echo $thisValue;
