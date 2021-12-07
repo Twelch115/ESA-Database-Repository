@@ -5,8 +5,9 @@
 	<title> Add an Attendance </title> <!-- Sets Page title -->
 </head> <!-- closes header tag -->
 <body>
-<p> Input a new attendance into the database </p> 
+<p> Input a new mission into the database </p> 
 <a href = ../index.html> Cancel Addition </a> <br> <br> <!-- links back to the index page -->
+<form	
 <div class="mb-3">
     	<label for="type" class="form-label">Target ID:</label>
 	<select id="target_id" name="target_id">
