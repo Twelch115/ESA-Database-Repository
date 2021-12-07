@@ -1,8 +1,15 @@
 <?php
 echo "hello";
-	require '../Connection.php'; #the file will not run without Validation.PHP being linked
-	require '../Validation.php'; #the file will not run without Validation.PHP being linked
-	$result = mysqli_query($connection, "SELECT * FROM targets");
+require '../Connection.php'; #the file will not run without Validation.PHP being linked
+require '../Validation.php'; #the file will not run without Validation.PHP being linked
+echo "hello2";
+$sql = "SELECT astronaut_id, name, no_missions FROM astronaut"; #select all columns from astronaut table
+$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
+print_r($result);
+
+
+
+// $result = mysqli_query($connection, "SELECT * FROM targets");
 // 	print_r($result);
 // 	mysqli_close($connection);
 //                 foreach ($result as $row ) {
