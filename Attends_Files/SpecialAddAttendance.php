@@ -9,13 +9,6 @@
 	
 <?php
 echo " I am here";
-require '../Connection.php'; #the file will not run without Connection.PHP being linked
-if(!mysqli_query($connection, "SELECT * FROM targets")){
-	die("Error:".mysqli_error($connection));
-}
-else{
-	echo "Data Inputed, ";
-}
 ?>
 <!-- 
 <div class="mb-3">
