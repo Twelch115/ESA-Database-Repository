@@ -18,5 +18,5 @@ mysqli_close($connection);
 
 echo '<a href = "../index.html">Return </a>' #return to index
 
-// #ends PHP code block 
+#ends PHP code block 
 ?>
