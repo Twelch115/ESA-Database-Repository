@@ -23,6 +23,7 @@
                 $thisValue = $row['target_id'];
                 echo "<option  value= $thisValue >" . $thisValue . "</option>";
                 }  
+		mysqli_close($connection);
             ?>
         </select>  
 </div>
