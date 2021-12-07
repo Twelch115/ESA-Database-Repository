@@ -14,7 +14,7 @@ $result = mysqli_query($conn, "SELECT * FROM targets");
 
 <div class="mb-3">
     <label for="type" class="form-label">Target ID:</label>
-        <select id="target_ids" name="target_ids">
+        <select id="target_id" name="target_id">
             <?php
                 foreach ($result as $row ) {
                 $thisValue = $row['target_id'];
