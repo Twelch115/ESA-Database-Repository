@@ -17,6 +17,13 @@
             <?php
 		require '../Connection.php'; #the file will not run without Connection.PHP being linked
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
+		if(!mysqli_query($connection, "SELECT * FROM targets")){
+			die("Error:".mysqli_error($connection));
+		}
+		else{
+			echo "Data Inputed, ";
+		}
+
 		$result = mysqli_query($connection, "SELECT * FROM targets");
 		print_r($result);
                 foreach ($result as $row ) {
