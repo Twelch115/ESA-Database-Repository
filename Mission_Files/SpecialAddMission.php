@@ -2,7 +2,7 @@
 <html> <!-- begins the HTML code block -->
 
 <head> <!-- opens header tag -->
-	<title> Add an Attendance </title> <!-- Sets Page title -->
+	<title> Add a Mission </title> <!-- Sets Page title -->
 </head> <!-- closes header tag -->
 <body>
 <p> Input a new mission into the database </p> 
