@@ -12,7 +12,7 @@ if(!mysqli_query($connection, $sql)){
 	die("Error:".mysqli_error($connection));
 }
 else{
-	echo "Data Inputed,";
+	echo "Data Inputed, ";
 }
 
 mysqli_close($connection);
