@@ -8,6 +8,7 @@
 <body>
 	
 <?php
+echo " I am here";
 require '../Connection.php'; #the file will not run without Connection.PHP being linked
 if(!mysqli_query($connection, "SELECT * FROM targets")){
 	die("Error:".mysqli_error($connection));
@@ -16,7 +17,7 @@ else{
 	echo "Data Inputed, ";
 }
 ?>
-
+<!-- 
 <div class="mb-3">
     <label for="type" class="form-label">Target ID:</label>
         <select id="target_id" name="target_id">
@@ -36,7 +37,7 @@ else{
             ?>
         </select>  
 </div>
-  
+   -->
 </body>
   
 </html>
