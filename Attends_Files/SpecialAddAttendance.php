@@ -17,8 +17,8 @@
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
 		mysqli_close($connection);
 		foreach ($result as $row ) {
-			$thisValue = $row['target_id'];
-			echo "<option  value= $thisValue >" . $thisValue . "</option>";
+		$thisValue = $row['target_id'];
+		echo "<option  value= $thisValue >" . $thisValue . "</option>";
 		}  
 		?>
         </select> 
