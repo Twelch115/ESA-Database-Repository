@@ -6,16 +6,14 @@ require '../Validation.php'; #the file will not run without Validation.PHP being
 $AstroName = Validate($_POST["AstroName"]);
 $AstroMissions = $_POST["AstroMissions"];
 
-echo $AstroName;
+$sql = "INSERT INTO astronaut(name, no_missions) VALUES ('$AstroName', $AstroMissions)";
 
-// $sql = "INSERT INTO astronaut(name, no_missions) VALUES ('$AstroName', $AstroMissions)";
-
-// if(!mysqli_query($connection, $sql)){
-// 	die("Error:".mysqli_error($connection));
-// }
-// else{
-// 	echo "Data Inputed,";
-// }
+if(!mysqli_query($connection, $sql)){
+	die("Error:".mysqli_error($connection));
+}
+else{
+	echo "Data Inputed,";
+}
 
 // mysqli_close($connection);
 
