@@ -1,11 +1,12 @@
 <?php #starts PHP code block
-echo "hello";
+
 require '../Connection.php'; #the file will not run without Connection.PHP being linked
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
+$AstroName = Validate($_POST["AstroName"]);
+$AstroMissions = $_POST["AstroMissions"];
 
-// $AstroName = Validate($_POST["AstroName"]);
-// $AstroMissions = $_POST["AstroMissions"];
+echo $AstroName;
 
 // $sql = "INSERT INTO astronaut(name, no_missions) VALUES ('$AstroName', $AstroMissions)";
 
