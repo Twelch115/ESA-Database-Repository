@@ -1,7 +1,7 @@
 <?php #starts the PHP code block
 define ("DB_NAME", "ESA_Database");
-define ("DB_USER", "root");
-define ("DB_PASSWORD", "");
+define ("DB_USER", "admin");
+define ("DB_PASSWORD", "backEND12345");
 define ("DB_HOST", "localhost");
 
 
