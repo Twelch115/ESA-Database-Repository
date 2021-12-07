@@ -10,12 +10,12 @@ if(!mysqli_query($connection, $sql)){
 	die("Error:".mysqli_error($connection));
 }
 else{
-	echo "Data removed,";
+	echo "Data removed, ";
 }
 
 mysqli_close($connection);
 
-echo '<a href = "../index.html"> Return </a>' #return to infex
+echo '<a href = "../index.html">Return </a>' #return to infex
 
 #ends PHP code block 
 ?>
