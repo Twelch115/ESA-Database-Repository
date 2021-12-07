@@ -1,9 +1,15 @@
 <?php
-	require '../Connection.php'; #the file will not run without Validation.PHP being linked
-	require '../Validation.php'; #the file will not run without Validation.PHP being linked
-	$result = mysqli_query($connection, "SELECT * FROM targets");
-	print_r($result);
-	mysqli_close($connection);
+echo "hello";
+// 	require '../Connection.php'; #the file will not run without Validation.PHP being linked
+// 	require '../Validation.php'; #the file will not run without Validation.PHP being linked
+// 	$result = mysqli_query($connection, "SELECT * FROM targets");
+// 	print_r($result);
+// 	mysqli_close($connection);
+//                 foreach ($result as $row ) {
+//                 $thisValue = $row['target_id'];
+// 		echo $thisValue;
+//                 echo "<option  value= $thisValue >" . $thisValue . "</option>";
+//                 }  
 ?>
 
 <!DOCTYPE html> <!-- sets the type of code to be used in the document -->
