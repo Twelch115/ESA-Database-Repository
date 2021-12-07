@@ -1,5 +1,9 @@
 <?php
-echo " I am here";
+	require '../Connection.php'; #the file will not run without Validation.PHP being linked
+	require '../Validation.php'; #the file will not run without Validation.PHP being linked
+	$result = mysqli_query($connection, "SELECT * FROM targets");
+	print_r($result);
+	mysqli_close($connection);
 ?>
 
 <!DOCTYPE html> <!-- sets the type of code to be used in the document -->
@@ -10,7 +14,9 @@ echo " I am here";
 </head> <!-- closes header tag -->
 <body>
 <div class="mb-3">
-    <label for="type" class="form-label">Target ID:</label> 
+    <label for="type" class="form-label">Target ID:</label>
+	<select id="target_id" name="target_id">
+        </select> 
 </div>
 </body>
 </html>
