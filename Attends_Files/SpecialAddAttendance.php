@@ -1,7 +1,7 @@
 <?php
 echo "hello";
-// 	require '../Connection.php'; #the file will not run without Validation.PHP being linked
-// 	require '../Validation.php'; #the file will not run without Validation.PHP being linked
+	require '../Connection.php'; #the file will not run without Validation.PHP being linked
+	require '../Validation.php'; #the file will not run without Validation.PHP being linked
 // 	$result = mysqli_query($connection, "SELECT * FROM targets");
 // 	print_r($result);
 // 	mysqli_close($connection);
