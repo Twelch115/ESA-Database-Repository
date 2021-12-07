@@ -13,12 +13,12 @@ if(!mysqli_query($connection, $sql)){
 	die("Error:".mysqli_error($connection));
 }
 else{
-	echo "Data Inputed," ;
+	echo "Data Inputed, " ;
 }
 
 mysqli_close($connection);
 
-echo '<a href = "../index.html"> Return </a>' #return to index
+echo '<a href = "../index.html">Return </a>' #return to index
 
 #ends PHP code block 
 ?>
