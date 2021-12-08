@@ -24,7 +24,6 @@
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
 		$sql = "SELECT * FROM targets"; #select all columns from astronaut table
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
-		mysqli_close($connection);
 		foreach ($result as $row ) {
 		$thisValue = $row['name'];
 		echo "<option  value= $thisValue >" . $thisValue . "</option>";
@@ -36,8 +35,6 @@
     	<label for="type" class="form-label">Target ID:</label>
 	<select name="target_id">
 		<?php
-		require '../Connection.php'; #the file will not run without Validation.PHP being linked
-		require '../Validation.php'; #the file will not run without Validation.PHP being linked
 		$sql = "SELECT * FROM targets"; #select all columns from astronaut table
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
 		mysqli_close($connection);
