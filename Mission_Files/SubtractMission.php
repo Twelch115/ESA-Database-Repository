@@ -15,7 +15,7 @@
 	<?php
 	require '../Connection.php'; #the file will not run without Validation.PHP being linked
 	require '../Validation.php'; #the file will not run without Validation.PHP being linked    
-	$sql = "SELECT * FROM Mission"; #select all columns from astronaut table
+	$sql = "SELECT * FROM mission"; #select all columns from astronaut table
 	$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
 	mysqli_close($connection); #ends SQL database connection
 	foreach ($result as $row ) { #for each row in $result
