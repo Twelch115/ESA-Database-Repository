@@ -8,8 +8,8 @@
 <p> Input a new attendance into the database </p> 
 <a href = ../index.html> Cancel Addition </a> <br> <br> <!-- links back to the index page -->
 <div class="mb-3"> <!-- opens DIV -->
-    	<label for="type" class="form-label">Mission Name:</label> <br>
-	<select name="AttName:">
+    	<label for="type" class="form-label">Name of Mission:</label> <br>
+	<select name="AttName">
 		<?php
 		require '../Connection.php'; #the file will not run without Validation.PHP being linked
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
@@ -23,14 +23,14 @@
         </select> 
 </div> <br> <!-- closes DIV -->
 <div class="mb-3"> <!-- opens DIV -->
-    	<label for="type" class="form-label">Mission Name:</label> <br>
+    	<label for="type" class="form-label">ID of Attending Astronaut:</label> <br>
 	<select name="AttId">
 		<?php
-		$sql = "SELECT * FROM mission"; #select all columns from astronaut table
+		$sql = "SELECT * FROM astronaut"; #select all columns from astronaut table
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
 		mysqli_close($connection); #ends SQL database connection
 		foreach ($result as $row ) {
-		$thisValue = $row['name'];
+		$thisValue = $row['astronaut_id'];
 		echo "<option  value= $thisValue >" . $thisValue . "</option>";
 		}  
 		?>
