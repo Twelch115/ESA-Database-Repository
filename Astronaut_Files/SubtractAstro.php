@@ -2,8 +2,8 @@
 <html> <!-- begins the HTML code block -->
   
 <head> <!-- opens header tag -->
-	<title> Add an astronaut </title> <!-- Sets Page title -->
-	<link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->
+<title> Add an astronaut </title> <!-- Sets Page title -->
+<link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->
 </head> <!-- closes header tag -->
 <body> <!-- opens body tag -->
 <p> Remove an astronaut from the database </p> 
