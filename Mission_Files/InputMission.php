@@ -1,9 +1,8 @@
 <!DOCTYPE html> <!-- sets the type of code to be used in the document -->
 <html> <!-- begins the HTML code block -->
-
 <head> <!-- opens header tag -->
-	<title> Add a Mission </title> <!-- Sets Page title -->
-	<link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->
+<title> Add a Mission </title> <!-- Sets Page title -->
+<link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->
 </head> <!-- closes header tag -->
 <body>
 <p> Input a new mission into the database </p> 
