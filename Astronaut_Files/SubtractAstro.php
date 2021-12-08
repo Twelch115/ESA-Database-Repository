@@ -21,7 +21,7 @@
 	echo "<option value= $thisValue >" . $thisValue . "</option>"; #print row as option
 	}  
 	?>
-  </select> <!-- closes selection -->
+    </select> <!-- closes selection -->
 </div> <br> <!-- closes DIV -->  
 <input type = "submit" name = "AstroSubmit" value = "Submit removal"> <!-- sets the form submission box -->
 </form>	 <!-- ends the form -->	
