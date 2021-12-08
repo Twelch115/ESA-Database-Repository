@@ -1,5 +1,6 @@
 <html> <!-- begins HTML code block --> 
 <head> <!-- opens header -->
+<title> Add an astronaut </title> <!-- Sets Page title -->
 <link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->	
 </head>	<!-- closes header -->
 </html>	 <!-- ends HTML code block -->
