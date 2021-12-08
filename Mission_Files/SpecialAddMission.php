@@ -17,7 +17,7 @@
 <label for="type" class="form-label">Mission Crew size:</label> <br> <!-- sets the description label -->		
 <input type = "number" style = "width:250px" name = "MissCrew" min = "1" required> <br> <br> <!-- sets the crew size input box, with it's name, style and min value -->	
 <div class="mb-3">
-    	<label for="type" class="form-label">Target Name:</label>
+    	<label for="type" class="form-label">Target Name:</label> <br>
 	<select name="MissID">
 		<?php
 		require '../Connection.php'; #the file will not run without Validation.PHP being linked
@@ -32,7 +32,7 @@
         </select> 
 </div>	
 <div class="mb-3">
-    	<label for="type" class="form-label">Target ID:</label>
+    	<label for="type" class="form-label">Target ID:</label> <br>
 	<select name="target_id">
 		<?php
 		$sql = "SELECT * FROM targets"; #select all columns from astronaut table
