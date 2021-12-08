@@ -17,8 +17,8 @@
 <label for="type" class="form-label">Mission Crew size:</label> <br> <!-- sets the description label -->		
 <input type = "number" style = "width:250px" name = "MissCrew" min = "1" required> <br> <br> <!-- sets the crew size input box, with it's name, style and min value -->	
 <div class="mb-3">
-    	<label for="type" class="form-label">Target ID:</label>
-	<select id="target_id" name="target_id">
+    	<label for="type" class="form-label">Target Name:</label>
+	<select name="MissID">
 		<?php
 		require '../Connection.php'; #the file will not run without Validation.PHP being linked
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
@@ -34,7 +34,7 @@
 </div>	
 <div class="mb-3">
     	<label for="type" class="form-label">Target ID:</label>
-	<select id="target_id" name="target_id">
+	<select name="target_id">
 		<?php
 		require '../Connection.php'; #the file will not run without Validation.PHP being linked
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
