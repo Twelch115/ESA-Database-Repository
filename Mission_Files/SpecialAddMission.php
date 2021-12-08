@@ -26,7 +26,7 @@
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
 		foreach ($result as $row ) {
 		$thisValue = $row['name'];
-		echo "<option  value= $thisValue >" . $thisValue . "</option>";
+		echo "<option style = "width:250px" value= $thisValue >" . $thisValue . "</option>";
 		}  
 		?>
         </select> 
@@ -40,7 +40,7 @@
 		mysqli_close($connection);
 		foreach ($result as $row ) {
 		$thisValue = $row['target_id'];
-		echo "<option  value= $thisValue >" . $thisValue . "</option>";
+		echo "<option style = "width:250px" value= $thisValue >" . $thisValue . "</option>";
 		}  
 		?>
         </select> 
