@@ -30,7 +30,7 @@
 		}  
 		?>
         </select> <!-- closes selection -->
-</div> <br> <br> <!-- closes DIV -->
+</div> <br> <!-- closes DIV -->
 <div class="mb-3"> <!-- opens DIV -->
     	<label for="type" class="form-label">Target ID:</label> <br> <!-- sets the description label -->
 	<select name="MissTarget"> <!-- sets name of selection box -->
@@ -44,7 +44,7 @@
 		}  
 		?>
         </select> <!-- closes selection -->
-</div> <br> <br> <!-- closes DIV -->
+</div> <br> <!-- closes DIV -->
 <input type = "submit" name = "MissSubmit" value = "Submit addition"> <!-- sets the form submission box -->
 </form>	 <!-- ends the form -->	
 </body>
