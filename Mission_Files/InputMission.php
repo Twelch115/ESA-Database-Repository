@@ -3,6 +3,7 @@
 
 <head> <!-- opens header tag -->
 	<title> Add a Mission </title> <!-- Sets Page title -->
+	<link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->
 </head> <!-- closes header tag -->
 <body>
 <p> Input a new mission into the database </p> 
