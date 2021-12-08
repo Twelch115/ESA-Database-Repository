@@ -2,7 +2,7 @@
 <html> <!-- begins the HTML code block -->
   
 <head> <!-- opens header tag -->
-<title> Add an astronaut </title> <!-- Sets Page title -->
+<title> Remove an astronaut </title> <!-- Sets Page title -->
 <link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->
 </head> <!-- closes header tag -->
 <body> <!-- opens body tag -->
@@ -13,6 +13,8 @@
     <label for="type" class="form-label">ID of astronaut to be removed:</label> <br> <!-- sets the description label -->
     <select name="AstroID"> <!-- sets name of selection box -->
 	<?php
+	require '../Connection.php'; #the file will not run without Validation.PHP being linked
+	require '../Validation.php'; #the file will not run without Validation.PHP being linked    
 	$sql = "SELECT * FROM astronaut"; #select all columns from astronaut table
 	$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
 	mysqli_close($connection); #ends SQL database connection
