@@ -16,34 +16,36 @@
 <input type = "text" style = "width:250px;" name = "MissType" minlength = "1" maxlength = "30" required> <br> <br> <!-- sets the mission type input box, with it's name, style and length -->
 <label for="type" class="form-label">Mission Crew size:</label> <br> <!-- sets the description label -->		
 <input type = "number" style = "width:250px" name = "MissCrew" min = "1" required> <br> <br> <!-- sets the crew size input box, with it's name, style and min value -->	
-<div class="mb-3">
-    	<label for="type" class="form-label">Target Name:</label> <br>
-	<select name="MissDestination">
+<div class="mb-3"> <!-- opens DIV -->
+    	<label for="type" class="form-label">Target Name:</label> <br> <!-- sets the description label -->
+	<select name="MissDestination"> <!-- sets name of selection box -->
 		<?php
 		require '../Connection.php'; #the file will not run without Validation.PHP being linked
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
 		$sql = "SELECT * FROM targets"; #select all columns from astronaut table
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
-		foreach ($result as $row ) {
-		$thisValue = $row['name'];
-		echo "<option value= $thisValue >" . $thisValue . "</option>";
+		foreach ($result as $row ) { #for each row in $result
+		$thisValue = $row['name']; #set $ThisValue as current row
+		echo "<option value= $thisValue >" . $thisValue . "</option>"; #print row as option
 		}  
 		?>
-        </select> 
-</div>	
-<div class="mb-3">
-    	<label for="type" class="form-label">Target ID:</label> <br>
-	<select name="MissTarget">
+        </select> <!-- closes selection -->
+</div> <!-- closes DIV -->
+<div class="mb-3"> <!-- opens DIV -->
+    	<label for="type" class="form-label">Target ID:</label> <br> <!-- sets the description label -->
+	<select name="MissTarget"> <!-- sets name of selection box -->
 		<?php
 		$sql = "SELECT * FROM targets"; #select all columns from astronaut table
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
-		mysqli_close($connection);
-		foreach ($result as $row ) {
-		$thisValue = $row['target_id'];
-		echo "<option value= $thisValue >" . $thisValue . "</option>";
+		mysqli_close($connection); #ends SQL database connection
+		foreach ($result as $row ) { #for each row in $result
+		$thisValue = $row['target_id']; #set $ThisValue as current row
+		echo "<option value= $thisValue >" . $thisValue . "</option>"; #print row as option
 		}  
 		?>
-        </select> 
-</div>
+        </select> <!-- closes selection -->
+</div> <!-- closes DIV -->
+<input type = "submit" name = "MissSubmit" value = "Submit addition"> <!-- sets the form submission box -->
+</form>	 <!-- ends the form -->	
 </body>
 </html>
