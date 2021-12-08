@@ -36,6 +36,7 @@
 		?>
         </select> 
 </div> <br> <!-- closes DIV -->
+<input type = "submit" name = "AttSubmit" value = "Submit addition"> <!-- sets the form submission box -->
 </form>	 <!-- ends the form -->	
 </body>
 </html>
