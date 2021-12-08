@@ -1,4 +1,3 @@
-<!DOCTYPE html> <!-- sets the type of code to be used in the document -->
 <html> <!-- begins HTML code block --> 
 <head> <!-- opens header -->
 <link rel="icon" href="../Images/Rockets.jpg"> <!-- creates icon -->	
