@@ -7,6 +7,7 @@
 <body>
 <p> Input a new attendance into the database </p> 
 <a href = ../index.html> Cancel Addition </a> <br> <br> <!-- links back to the index page -->
+<form action = "AddAttendance.php" method = "post"> <!-- starts the form, sets the action on submission and the method used -->	
 <div class="mb-3"> <!-- opens DIV -->
     	<label for="type" class="form-label">Name of Mission:</label> <br>
 	<select name="AttName">
