@@ -18,7 +18,7 @@
 <input type = "number" style = "width:250px" name = "MissCrew" min = "1" required> <br> <br> <!-- sets the crew size input box, with it's name, style and min value -->	
 <div class="mb-3">
     	<label for="type" class="form-label">Target Name:</label> <br>
-	<select name="MissID">
+	<select name="MissDestination">
 		<?php
 		require '../Connection.php'; #the file will not run without Validation.PHP being linked
 		require '../Validation.php'; #the file will not run without Validation.PHP being linked
@@ -33,7 +33,7 @@
 </div>	
 <div class="mb-3">
     	<label for="type" class="form-label">Target ID:</label> <br>
-	<select name="target_id">
+	<select name="MissTarget">
 		<?php
 		$sql = "SELECT * FROM targets"; #select all columns from astronaut table
 		$result = mysqli_query($connection, $sql); #place connection and sql into a query in result variable
