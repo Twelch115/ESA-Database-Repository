@@ -3,11 +3,11 @@ require '../Connection.php'; #the file will not run without Connection.PHP being
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
 $TarName = Validate($_POST["TarName"]);
-$TarFirstDate = $_POST["TarFirst"];
+$TarFirstDate = Validate($_POST["TarFirst"]);
 $TarType = Validate($_POST["TarType"]);
 $TarMissions = $_POST["TarMissions"];
 
-$sql = "INSERT INTO targets(name, first_mission, type, no_missions) VALUES ('$TarName', $TarFirst, '$TarType', $TarMissions)";
+$sql = "INSERT INTO targets(name, first_mission, type, no_missions) VALUES ('$TarName', '$TarFirst', '$TarType', $TarMissions)";
 
 if(!mysqli_query($connection, $sql)){
 	die("Error:".mysqli_error($connection));
