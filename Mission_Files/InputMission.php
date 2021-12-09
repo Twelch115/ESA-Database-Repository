@@ -15,7 +15,7 @@
 <label for="type" class="form-label">Mission type:</label> <br> <!-- sets the description label -->	
 <input type = "text" style = "width:250px;" name = "MissType" minlength = "1" maxlength = "30" required> <br> <br> <!-- sets the mission type input box, with it's name, style and length -->
 <label for="type" class="form-label">Mission Crew size:</label> <br> <!-- sets the description label -->		
-<input type = "number" style = "width:250px" name = "MissCrew" min = "1" required> <br> <br> <!-- sets the crew size input box, with it's name, style and min value -->	
+<input type = "number" style = "width:250px" name = "MissCrew" min = "0" required> <br> <br> <!-- sets the crew size input box, with it's name, style and min value -->	
 <div class="mb-3"> <!-- opens DIV -->
     	<label for="type" class="form-label">Target Name:</label> <br> <!-- sets the description label -->
 	<select name="MissDestination"> <!-- sets name of selection box -->
