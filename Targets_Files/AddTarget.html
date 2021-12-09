@@ -10,8 +10,8 @@
 	<form action = "AddTarget.php" method = "post"> <!-- starts the form, sets the action on submission and the method used -->
 		<label for="type" class="form-label">Targets Name:</label> <br> <!-- sets the description label -->
 		<input type = "text" style = "width:250px;" name = "TarName" minlength = "1" maxlength = "30" required> <br> <br> <!-- sets the name input box, with it's name, style and length -->
-		<label for="type" class="form-label">First Mission to Target:</label> <br> <!-- sets the description label -->
-        	<input type = "text" style = "width:250px;" name = "TarFirst" minlength = "1" maxlength = "30" required> <br> <br> <!-- sets the first mission input box, with it's name, style and paramiters-->
+		<label for="type" class="form-label">Date of First Mission to Target:</label> <br> <!-- sets the description label -->
+        	<input type = "number" style = "width:250px;" name = "TarFirst" min = "1" required> <br> <br> <!-- sets the first mission input box, with it's name, style and paramiters-->
 		<label for="type" class="form-label">Type of Target:</label> <br> <!-- sets the description label -->
         	<input type = "text" style = "width:250px;" name = "TarType" minlength = "1" maxlength= "30" required> <br> <br> <!-- sets the type input box, with it's name, style and length -->
 		<label for="type" class="form-label">Total Missions that have gone to this Target:</label> <br> <!-- sets the description label -->
