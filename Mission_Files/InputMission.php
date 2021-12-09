@@ -10,7 +10,7 @@
 <form action = "AddMission.php" method = "post"> <!-- starts the form, sets the action on submission and the method used -->
 <label for="type" class="form-label">Mission Name:</label> <br> <!-- sets the description label -->	
 <input type = "text" style = "width:250px;" name = "MissName"  minlength = "1" maxlength = "30" required> <br> <br> <!-- sets the name input box, with it's name, style and length -->
-<label for="type" class="form-label">Mission Departure Date (DDMMYYYY):</label> <br> <!-- sets the description label -->	
+<label for="type" class="form-label">Mission Departure Date (YYYYMMDD):</label> <br> <!-- sets the description label -->	
 <input type = "number" style = "width:250px;" name = "MissDeparture" min = "00000001" max = "99999999"> <br> <br> <!-- sets the departure date input box, with it's name and min/max values -->
 <label for="type" class="form-label">Mission type:</label> <br> <!-- sets the description label -->	
 <input type = "text" style = "width:250px;" name = "MissType" minlength = "1" maxlength = "30" required> <br> <br> <!-- sets the mission type input box, with it's name, style and length -->
