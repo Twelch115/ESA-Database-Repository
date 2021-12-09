@@ -7,7 +7,7 @@ $TarFirstDate = $_POST["TarFirst"];
 $TarType = Validate($_POST["TarType"]);
 $TarMissions = $_POST["TarMissions"];
 
-$sql = "INSERT INTO targets(name, first_mission, type, no_missions) VALUES ('$TarName', $TarFirst, '$TarType', $TarMissions)";
+$sql = "INSERT INTO targets(name, first_mission, type, no_missions) VALUES ('$TarName', '$TarFirst', '$TarType', $TarMissions)";
 
 if(!mysqli_query($connection, $sql)){
 	die("Error:".mysqli_error($connection));
