@@ -10,7 +10,7 @@
 <a href = ../index.html> Cancel Removal <a> <br> <br> <!-- links back to the index page -->
 <form action = "RemoveAttendance.php" method = "post"> <!-- starts the form, sets the action on submission and the method used -->
 <div class="mb-3"> <!-- opens DIV -->
-    <label for="type" class="form-label">Name of mission astronaut will be removed from:</label> <br> <!-- sets the description label -->
+    <label for="type" class="form-label">Name of Mission Astronaut will be removed from:</label> <br> <!-- sets the description label -->
     <select name="AttName"> <!-- sets name of selection box -->
 	  <?php
 	  require '../Connection.php'; #the file will not run without Validation.PHP being linked
@@ -25,7 +25,7 @@
     </select> <!-- closes selection -->
 </div> <br> <!-- closes DIV -->  
 <div class="mb-3"> <!-- opens DIV -->
-    <label for="type" class="form-label">Name of mission astronaut will be removed from:</label> <br> <!-- sets the description label -->
+    <label for="type" class="form-label">Astronauts ID:</label> <br> <!-- sets the description label -->
     <select name="AttId"> <!-- sets name of selection box -->
 	  <?php   
 	  $sql = "SELECT * FROM astronaut"; #select all columns from astronaut table
