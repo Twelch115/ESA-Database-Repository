@@ -3,7 +3,7 @@ require '../Connection.php'; #the file will not run without Connection.PHP being
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
 $MissName = Validate($_POST["MissName"]);
-
+echo "$MissName";
 $sql = "DELETE FROM mission WHERE name = '$MissName'";
 
 if(!mysqli_query($connection, $sql)){
