@@ -21,7 +21,7 @@ else{ #ELSE
 
 mysqli_close($connection); #ends connection with SQL database
 
-echo '<a href = "../index.html">Return </a>' #return to infex
+echo '<a href = "../index.html">Return </a>' #return to index
 
 #ends PHP code block 
 ?>
