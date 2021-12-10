@@ -2,20 +2,20 @@
 require '../Connection.php'; #the file will not run without Connection.PHP being linked
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
-$TarName = Validate($_POST["TarName"]);
+$TarName = Validate($_POST["TarName"]); #set data from form as variable
 
-$sql = "DELETE FROM targets WHERE name = '$TarName'";
+$sql = "DELETE FROM targets WHERE name = '$TarName'"; # create query to remove data from table at given id
 
-if(!mysqli_query($connection, $sql)){
-	die("Error:".mysqli_error($connection));
+if(!mysqli_query($connection, $sql)){ #IF the connection fails
+	die("Error:".mysqli_error($connection)); #end code and print error message
 }
-else{
-	echo "Data removed, ";
+else{ #ELSE
+	echo "Data removed, "; #print success message
 }
 
-mysqli_close($connection);
+mysqli_close($connection); #ends connection with SQL database
 
-echo '<a href = "../index.html">Return </a>' #return to infex
+echo '<a href = "../index.html">Return </a>' #return to index
 
 #ends PHP code block 
 ?>
