@@ -7,15 +7,15 @@ $AttId = $_POST["AttId"];
 
 $sql = "INSERT INTO attends(mission_name, astronaut_id) VALUES ('$AttName', $AttId)";
 
-//$sql_get_astro = mysqli_query($connection,"SELECT no_missions FROM astronaut WHERE astronaut_id = $AttId");
-//$result = mysqli_fetch_assoc($sql_get_astro);
-//$new_no_missions = $result['no_missions'] + 1;
-//mysqli_query($connection, "UPDATE astronaut SET no_missions = $new_no_missions WHERE astronaut_id =  $AttId ");
+$sql_get_astro = mysqli_query($connection,"SELECT no_missions FROM astronaut WHERE astronaut_id = $AttId");
+$result = mysqli_fetch_assoc($sql_get_astro);
+$new_no_missions = $result['no_missions'] + 1;
+mysqli_query($connection, "UPDATE astronaut SET no_missions = $new_no_missions WHERE astronaut_id =  $AttId ");
 
-//$sql_get_miss = mysqli_query($connection, "SELECT crew_size FROM mission WHERE name = '$AttName'");
-//$results = mysqli_fetch_assoc($sql_get_miss);
-//$new_no_crew = $results['crew_size'] + 1;
-//mysqli_query($connection, "UPDATE mission SET crew_size = $new_no_crew WHERE name = '$AttName'");
+$sql_get_miss = mysqli_query($connection, "SELECT crew_size FROM mission WHERE name = '$AttName'");
+$results = mysqli_fetch_assoc($sql_get_miss);
+$new_no_crew = $results['crew_size'] + 1;
+mysqli_query($connection, "UPDATE mission SET crew_size = $new_no_crew WHERE name = '$AttName'");
 
 if(!mysqli_query($connection, $sql)){
 	die("Error:".mysqli_error($connection));
