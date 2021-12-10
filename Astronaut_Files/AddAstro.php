@@ -10,7 +10,7 @@ require '../Connection.php'; #the file will not run without Connection.PHP being
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
 $AstroName = Validate($_POST["AstroName"]); #set data from form as variable
-$AstroMissions = $_POST["AstroMissions"]; #set data from form as 
+$AstroMissions = $_POST["AstroMissions"]; #set data from form as variable
 
 $sql = "INSERT INTO astronaut(name, no_missions) VALUES ('$AstroName', $AstroMissions)"; # create query to add data to table
 
