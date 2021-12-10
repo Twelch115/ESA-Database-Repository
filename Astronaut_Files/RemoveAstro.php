@@ -9,7 +9,7 @@
 require '../Connection.php'; #the file will not run without Connection.PHP being linked
 require '../Validation.php'; #the file will not run without Validation.PHP being linked
 
-$AstroID = $_POST["AstroID"]; #set data from for as variable
+$AstroID = $_POST["AstroID"]; #set data from form as variable
 
 $sql = "DELETE FROM astronaut WHERE astronaut_id='$AstroID'"; # create query to remove data from table at given id
 
